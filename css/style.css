@@ -1,0 +1,2275 @@
+* {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    /* font-size: 15px; */
+    /* line-height: 140%; */
+    /* line-height: 21px; */
+}
+:root {
+    /* шрифт */
+    --Green: #618B7E;
+    --335-e-50: #335E50;
+    --black: #000000;
+    --White: #FFFFFF;
+    --Grey-Medium: #A8A8A8;
+
+}
+
+/* sidebar начало */
+.logo_desktop_sidebar {
+    width: 166px;
+}
+.sidebar_navigation {
+    display: flex;
+    flex-direction: column;
+    /* gap: 296px; */
+    height: 100vh;
+    justify-content: space-between;
+}
+.nav_logo_and_links {
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 31px;
+}
+.logo_mobile_sidebar {
+    display: none;
+}
+.logo_and_links {
+    display: flex;
+    flex-direction: column;
+    gap: 31px;
+}
+.nav_logo_and_links_list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    margin-top: 58px;
+}
+.sidebar_navigation_container {
+    width: 234px;
+    background: #F4F4F4;
+}
+.aside_sidebar {
+    /* position: absolute; */
+    /* position: sticky; */
+    position: fixed;
+    z-index: 4;
+}
+.position_body {
+    position: relative;
+}
+.nav_logo_and_links_list li,
+.nav_connection_list li {
+    list-style-type: none;
+}
+.nav_connection_list {
+    display: flex;
+    gap: 16px;
+    margin-top: 71px;
+}
+.nav_connection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.nav_logo_and_links_list_link {
+    color: var(--335-e-50);
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 20px; /* 153.846% */
+    letter-spacing: 1.43px;
+    text-transform: uppercase;
+}
+.nav_connection_tel {
+    color: var(--black);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 26px; /* 130% */
+    margin-top: 30px;
+}
+.nav_connection_callback {
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px; /* 133.333% */
+    color: #335D50;
+    text-align: center;
+    margin-top: 8px;
+    max-width: 178px;
+    cursor: pointer;
+}
+.button_calculate_sidebar {
+    background-color: var(--Green);
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 102px;
+    font-size: 15px;
+    line-height: 133%;
+    /* margin-left: 22px; */
+    cursor: pointer;
+    margin-top: 24px;
+    font-weight: 700;
+}
+.button_calculate_sidebar:hover  {
+    opacity: .6;
+    transition: all 0.2s ease;
+}
+/* sidebar конец */
+
+/* общие стили начало */
+.main_section {
+    margin-left: 234px;
+}
+/* общие стили конец */
+
+/* page products начало */
+.products_component {
+    display: flex;
+    justify-content: center;
+}
+.products_component_container {
+    min-width: 1146px;
+    max-width: 1146px;
+}
+.products_component_heading {
+    text-align: center;
+    /* Headline/H1 */
+    font-family: Inter;
+    font-size: 52px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 64px; /* 123.077% */
+    margin-top: 70px;
+}
+.type_of_brevno {
+    display: flex;
+    justify-content: space-between;
+    /* margin-top: 40px; */
+    margin-top: 66px;
+}
+.card_ocilindrovannoe_brevno,
+.card_okoryonnoe_brevno {
+    max-width: 556px;
+    min-width: 556px;
+    display: flex;
+    flex-direction: column;
+    border: 3px solid #EFE0D1;
+}
+.card_ocilindrovannoe_brevno_img {
+    height: 300px;
+    width: 315px;
+    align-self: center;
+}
+.card_okoryonnoe_brevno_img {
+    height: 300px;
+    width: 311px;
+    align-self: center;
+}
+.card_ocilindrovannoe_brevno_price {
+    display: flex;
+    justify-content: space-between;
+}
+.card_okoryonnoe_brevno_price {
+    display: flex;
+    justify-content: space-between;
+}
+.card_ocilindrovannoe_brevno_heading,
+.card_okoryonnoe_brevno_heading {
+    color: var(--black, #000);
+    font-family: Inter;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 31.2px */
+}
+.card_ocilindrovannoe_brevno_list_point,
+.card_okoryonnoe_brevno_list_point {
+    color: var(--black, #000);
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 19.5px */
+    opacity: 0.7;
+}
+.card_ocilindrovannoe_brevno_price_text, 
+.card_okoryonnoe_brevno_price_text {
+    color: var(--black, #000);
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 140% */
+    opacity: 0.7;
+}
+.button_card_ocilindrovannoe_brevno_price,
+.button_card_okoryonnoe_brevno_price {
+    background-color: var(--Green);
+    color: #ffffff;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 102px;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 133%;
+    /* margin-left: 22px; */
+    cursor: pointer;
+}
+.card_ocilindrovannoe_brevno,
+.card_okoryonnoe_brevno {
+    display: flex;
+    flex-direction: column;
+    gap: 44px;
+}
+.card_ocilindrovannoe_brevno_text {
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+}
+.card_okoryonnoe_brevno_text {
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+}
+.card_ocilindrovannoe_brevno_list {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    padding-left: 18px;
+}
+.card_okoryonnoe_brevno_list {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    padding-left: 18px;
+}
+.card_okoryonnoe_brevno_text_container,
+.card_ocilindrovannoe_brevno_text_container {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    max-width: 496px;
+    min-width: 496px;
+    align-self: center;
+}
+.card_ocilindrovannoe_brevno {
+    padding-top: 22px;
+    padding-bottom: 32px;
+}
+.card_okoryonnoe_brevno {
+    padding-top: 24px;
+    padding-bottom: 32px;
+}
+.kachestvo_breven {
+    background-color: var(--335-e-50);
+}
+.kachestvo_breven_margintop1 {
+    margin-top: 155px;
+}
+.kachestvo_breven_margintop2 {
+    margin-top: 70px;
+}
+.kachestvo_breven_heading {
+    color: var(--White);
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px; /* 126.316% */
+    width: 405px;
+    margin-top: 9px;
+}
+.kachestvo_breven_section_one_text {
+    color: #B2CFC8;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 125% */
+    width: 451px;
+    margin-top: 24px;
+}
+.kachestvo_breven {
+    display: flex;
+    justify-content: space-between;
+}
+.kachestvo_breven_list_point {
+    color: #B2CFC8;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    list-style-type: none;
+    /* display: inline-flex; */
+    /* gap: 16px; */
+    padding-left: 10px;
+    width: 468px;
+}
+.kachestvo_breven_list_point_interval {
+    color: var(--White);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px; /* 140% */
+}
+.kachestvo_breven_list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    list-style-image: url("../icons/page_products/check_mark.svg");
+}
+.kachestvo_breven_list {
+    padding: 51px 81px 47px 0px;
+}
+.kachestvo_breven_section_one {
+    padding: 0px 0px 59px 40px;
+    margin-top: -32px;
+}
+.kachestvo_breven_section_one_img {
+    padding-left: 10px;
+}
+.products_page_text_one_heading {
+    color: #43382F;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 31.2px */
+}
+.products_page_text_one_text {
+    color: #43382F;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 21px */
+    width: 755px;
+    margin-top: 23px;
+}
+.products_page_text_one {
+    margin-top: 100px;
+    margin-bottom: 70px;
+}
+.before_after_block1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #CAEBE0;
+    padding: 35px 101px 42px 52px;
+}
+.before_after_block1_heading {
+    color: var(--black, #000);
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 31.2px */
+    width: 444px;
+}
+.before_after_block1_text {
+    color: var(--black, #000);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 140% */
+    width: 436px;
+}
+.before_after_block1_foto {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 23px;
+}
+.before_after {
+    padding-top: 30px;
+}
+.before_after_pluses_list_point {
+    color: var(--black, #000);
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 19.5px */
+    width: 252px;
+    position: relative;
+    padding-top: 34px;
+    margin-top: 40px
+}
+.before_after_pluses_list_point::before {
+    content: url(/icons/page_products/check_mark2.png);
+    position: absolute;
+    left: 0; /* Позиционируем маркер слева от текста */
+    top: 0;
+}
+.before_after_pluses_list_point_interval {
+    color: var(--black, #000);
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%;
+}
+.before_after_pluses_list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+/* page products конец */
+
+/* footer начало*/
+.footer_section {
+    margin-left: 234px;
+    display: flex;
+    justify-content: center;
+    background-image: url("../img/footer/background_footer.jpg");
+    background-color: #FDF9F3;
+}
+.footer_component_container {
+    /* background-image: url("../img/footer/background_footer.jpg"); */
+    /* background-color: #FDF9F3; */
+    display: flex;
+    gap: 314px;
+    padding: 52px 134px 55px 111px;
+    justify-content: space-between;
+}
+.footer_component_container_center {
+    display: flex;
+    width: 1366px;
+}
+.footer_company_name {
+    color: var(--black, #000);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%; /* 28px */
+}
+.footer_block_one_text_one,
+.footer_block_one_text_two,
+.footer_block_one_text_three {
+    color: var(--black, #000);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 16.8px */
+}
+.footer_block_one {
+    width: 308px;
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    margin-top: 2px;
+}
+.footer_block_two_list_point_link {
+    color: var(--black, #000);
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 21px */
+    text-decoration: none;
+}
+.footer_block_two_list_point {
+    list-style-type: none;
+    margin-bottom: 8px;
+}
+.footer_block_two_working_hours {
+    color: var(--black, #000);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px; /* 133.333% */
+    opacity: 0.5;
+}
+.footer_block_two_mail {
+    color: var(--black, #000);
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 21px */
+    text-decoration: none;
+    margin-top: 18px;
+    display: block;
+}
+.footer_block_three {
+    width: 237px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin-top: 2px;
+}
+.footer_block_three_section_one_politics,
+.footer_block_three_section_one_user_agreement {
+    color: #5D9583;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 18.2px */
+}
+.footer_block_three_is_made_text {
+    width: 149px;
+    color: #000;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 21px */
+}
+.footer_block_three_is_made_img {
+    text-decoration: none;
+    color: #B6A58C;
+}
+.footer_block_three_section_two {
+    display: flex;
+    gap: 10px;
+}
+.footer_block_three_section_one {
+    display: flex;
+    flex-direction: column;
+    gap: 7.5px;
+}
+.footer_block_one_two_container {
+    display: flex;
+    gap: 85px;
+}
+.footer_block_two_list {
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* gap: 8px; */
+}
+/* footer конец */
+
+/* page stroitelniye_uslugi начало */
+.stroitelniye_uslugi_domokomplekt_list_img {
+    width: 362px;
+    height: 257px;
+}
+.stroitelniye_uslugi_domokomplekt_domokomplekt_heading,
+.stroitelniye_uslugi_domokomplekt_pod_krishu_heading,
+.stroitelniye_uslugi_domokomplekt_pod_kluch_heading {
+    color: var(--black, #000);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px; /* 130% */
+}
+.stroitelniye_uslugi_domokomplekt_point_grey {
+    color: var(--Grey-Medium, #A8A8A8);
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 19.5px */
+    display: flex;
+    gap: 7px;
+}
+.stroitelniye_uslugi_domokomplekt_point_black {
+    color: var(--black, #000);
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 19.5px */
+    display: flex;
+    gap: 7px;
+}
+.stroitelniye_uslugi_domokomplekt_list {
+    display: flex;
+    margin-top: 40px;
+    justify-content: space-between;
+}
+.stroitelniye_uslugi_domokomplekt_point_grey::before {
+    content: url(/icons/page_stroitelniye_uslugi/house_kit_cross.png);
+}
+.stroitelniye_uslugi_domokomplekt_point_black::before {
+    content: url(/icons/page_stroitelniye_uslugi/domokomplekt_checkmark.png);
+}
+.button_stroitelniye_uslugi_domokomplekt_domokomplekt,
+.button_stroitelniye_uslugi_domokomplekt_pod_krishu,
+.button_stroitelniye_uslugi_domokomplekt_pod_kluch {
+    background-color: var(--Green);
+    color: #ffffff;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 102px;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 133%;
+    cursor: pointer;
+}
+.stroitelniye_uslugi_domokomplekt_list_point {
+    list-style-type: none;
+}
+.stroitelniye_uslugi_domokomplekt_domokomplekt,
+.stroitelniye_uslugi_domokomplekt_pod_krishu,
+.stroitelniye_uslugi_domokomplekt_pod_kluch {
+    border-width: 0px 3px 3px 3px;
+    border-style: solid;
+    border-color: #EFE0D1;
+    margin-top: -4px;
+    padding-top: 16px;
+    padding-bottom: 23px;
+    padding-left: 16px;
+}
+.stroitelniye_uslugi_heading {
+    color: #000;
+    text-align: center;
+    font-size: 52px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 64px; /* 123.077% */
+    padding-top: 70px;
+}
+.stroitelniye_uslugi {
+    display: flex;
+    justify-content: center;
+}
+.stroitelniye_uslugi_container {
+    min-width: 1146px;
+    max-width: 1146px;
+}
+/* .stroitelniye_uslugi_domokomplekt_domokomplekt_heading,
+.stroitelniye_uslugi_domokomplekt_pod_krishu_heading,
+.stroitelniye_uslugi_domokomplekt_pod_kluch_heading {
+    padding-top: 16px;
+} */
+.stroitelniye_uslugi_domokomplekt_domokomplekt_list,
+.stroitelniye_uslugi_domokomplekt_pod_krishu_list,
+.stroitelniye_uslugi_domokomplekt_pod_kluch_list {
+    display: flex;
+    flex-direction: column;
+    gap: 7.5px;
+    margin-top: 11px;
+}
+.button_stroitelniye_uslugi_domokomplekt_domokomplekt,
+.button_stroitelniye_uslugi_domokomplekt_pod_krishu,
+.button_stroitelniye_uslugi_domokomplekt_pod_kluch {
+    margin-top: 20px;
+}
+.stroitelniye_uslugi_page_text_one_heading {
+    color: #43382F;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+}
+.process_stroitelstva,
+.stroitelniye_uslugi_page_text_one {
+    display: flex;
+    justify-content: center;
+}
+.process_stroitelstva_container,
+.stroitelniye_uslugi_page_text_one_container {
+    min-width: 1146px;
+    max-width: 1146px;
+}
+.process_stroitelstva_heading {
+    color: #000;
+    text-align: center;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px; /* 126.316% */
+}
+.process_stroitelstva {
+    margin-top: 67px;
+}
+.slider_stroitelniye_uslugi_page {
+    margin-top: 29.8px;
+}
+.stroitelniye_uslugi_page_text_one {
+    margin-top: 75px;
+}
+.stroitelniye_uslugi_page_text_one_text {
+    margin-top: 23px;
+    margin-bottom: 70px;
+}
+.stroitelniye_uslugi_page_text_one_text {
+    max-width: 755px;
+    color: #43382F;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 21px */
+}
+/* .stroitelniye_uslugi_domokomplekt_list {
+    list-style-image: url(../icons/page_products/check_mark.svg);
+} */
+/* page stroitelniye_uslugi конец */
+
+/* homepage начало */
+
+.block_dostijeniy_one,
+.block_dostijeniy_two {
+    display: flex;
+}
+.dostijenie_csifra_one {
+    color: var(--Green, #618B7E);
+    text-align: center;
+    font-size: 71px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%; /* 71px */
+    padding-left: 9.4px;
+    padding-right: 9px;
+}
+.let_na_rynke,
+.dovolnih_klientov,
+.sudebnih_razbiratelstv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+}
+.block_dostijeniy {
+    display: flex;
+    justify-content: center;
+    margin-top: 56px;
+}
+.block_dostijeniy_container {
+    min-width: 1146px;
+    max-width: 1146px;
+    display: flex;
+    /* justify-content: space-between; */
+    justify-content: space-around;
+}
+.dostijenie_csifra_two {
+    color: var(--Green, #618B7E);
+    text-align: center;
+    font-size: 71px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%; /* 71px */
+    padding-left: 17.1px;
+    padding-right: 19px;
+}
+.dostijenie_csifra_three {
+    color: var(--Green, #618B7E);
+    text-align: center;
+    font-size: 71px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%; /* 71px */
+    padding-left: 8.1px;
+    padding-right: 11px;
+}
+.proecty_homepage_houses {
+    width: 756px;
+    height: 470px;
+    background-image: url("../img/homepage/project_houses.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: #CAEBE0;
+    display: block;
+    text-decoration: none;
+    position: relative;
+}
+.proecty_homepage_baths {
+    width: 378px;
+    height: 226px;
+    background-image: url("../img/homepage/project_baths.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-position: center; */
+    /* background-color: #CAEBE0; */
+    /* background: lightgray 50%; */
+    display: block;
+    text-decoration: none;
+    position: relative;
+    z-index: 1;
+}
+.proecty_homepage_gazebos_and_mafs {
+    width: 378px;
+    height: 233px;
+    background-image: url("../img/homepage/project_gazebos_and_mafs.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: #CAEBE0;
+    display: block;
+    text-decoration: none;
+    position: relative;
+}
+.proecty_homepage_houses_text,
+.proecty_homepage_baths_text,
+.proecty_homepage_gazebos_and_mafs_text {
+    position: absolute;
+    bottom: 0;
+    color: var(--White, #FFF);
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 31.2px */
+    margin-left: 24px;
+    margin-bottom: 26px;
+    z-index: 3;
+}
+.gallery1_1_1_text,
+.gallery1_1_2_text,
+.gallery1_2_1_text,
+.gallery1_2_2_text,
+.gallery1_2_3_text,
+.gallery1_3_1_text,
+.gallery1_3_2_text,
+.gallery2_1_text,
+.gallery2_2_text,
+.gallery3_1_text,
+.gallery3_2_text,
+.gallery3_3_text {
+    position: absolute;
+    color: var(--White, #FFF);
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 31.2px */
+    z-index: 3;
+    margin-left: 24px;
+    margin-bottom: 26px;
+    bottom: 0;
+}
+.proecty_homepage {
+    display: flex;
+    column-gap: 16px;
+    justify-content: center;
+    margin-top: 56px;
+    /* row-gap: 16px; */
+}
+.proecty_homepage_block_two {
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+}
+.proecty_homepage_gazebos_and_mafs_text {
+    width: 255px;
+}
+.overlay_proecty_homepage_baths {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    /* height: 100%; */
+    /* width: 378px; */
+    height: 98px;
+    /* background-color: rgba(0, 0, 0, 0.2); */
+    opacity: 0.4;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, #000 100%);
+    z-index: 2;
+}
+.overlay_proecty_homepage_gazebos_and_mafs {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    /* height: 100%; */
+    /* width: 378px; */
+    height: 120px;
+    opacity: 0.4;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, #000 100%);
+    /* background-color: rgba(0, 0, 0, 0.1); */
+    z-index: 2;
+}
+.overlay_proecty_homepage_houses {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    /* height: 100%; */
+    /* width: 756px; */
+    height: 207px;
+    opacity: 0.4;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, #000 100%);
+    /* background-color: rgba(0, 0, 0, 0.1); */
+    z-index: 2;
+}
+.overlay_gallery {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    opacity: 0.4;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, #000 100%);
+    z-index: 2;
+}
+.overlay_gallery_width_1_1_1 {
+    width: 656px;
+    height: 120px;
+}
+.overlay_gallery_width_1_1_2 {
+    width: 460px;
+    height: 120px;
+}
+.overlay_gallery_width_1_2_1,
+.overlay_gallery_width_1_2_2,
+.overlay_gallery_width_1_2_3 {
+    width: 362px;
+    height: 120px;
+}
+.overlay_gallery_width_1_3_1,
+.overlay_gallery_width_1_3_2 {
+    width: 558px;
+    height: 120px;
+}
+.overlay_gallery_width_2_1 {
+    width: 508px;
+    height: 120px;
+}
+.overlay_gallery_width_2_2 {
+    width: 609px;
+    height: 120px;
+}
+.overlay_gallery_width_3_1,
+.overlay_gallery_width_3_2,
+.overlay_gallery_width_3_3 {
+    width: 362px;
+    height: 120px;
+}
+
+.proecty_homepage_baths_container,
+.proecty_homepage_gazebos_and_mafs_container {
+    position: relative;
+}
+.sobstvennoe_proizvodstvo_heading {
+    margin-top: 70px;
+    color: var(--black, #000);
+    text-align: center;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px; /* 126.316% */
+    width: 774px;
+}
+.sobstvennoe_proizvodstvo {
+    display: flex;
+    justify-content: center;
+}
+.sobstvennoe_proizvodstvo_container {
+    min-width: 1146px;
+    max-width: 1146px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sobstvennoe_proizvodstvo_text {
+    color: var(--black, #000);
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 140% */
+    width: 798px;
+    opacity: 0.7;
+    margin-top: 24px;
+}
+.sobstvennoe_proizvodstvo_slider {
+    margin-top: 40px;
+}
+.sobstvennoe_proizvodstvo_button {
+    margin-top: 30px;
+    background-color: #FFFFFF;
+    color: var(--Green, #618B7E);
+    border: 2px solid var(--Green, #618B7E);
+    padding: 10px 24px;
+    border-radius: 102px;
+    font-size: 15px;
+    line-height: 133%;
+    font-weight: 700;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+}
+.kachestvo_breven_section {
+    display: flex;
+    justify-content: center;
+}
+.kachestvo_breven_section_container {
+    min-width: 1146px;
+    max-width: 1146px;
+}
+.chramy_chasovni {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.chramy_chasovni_container {
+    display: flex;
+    min-width: 1146px;
+    max-width: 1146px;
+    justify-content: space-between;
+    background: #CAEBE0;
+    border-radius: 2px;
+}
+.chramy_chasovni_heading {
+    color: var(--black, #000);
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px; /* 126.316% */
+    max-width: 556px;
+}
+.chramy_chasovni_point {
+    color: var(--black, #000);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 140% */
+    width: 495px;
+}
+.chramy_chasovni_list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    list-style-image: url(../icons/homepage/check_mark2.svg);
+    padding-left: 34px;
+    margin-top: 39px;
+}
+.chramy_chasovni_button {
+    background-color: var(--Green);
+    color: #ffffff;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 102px;
+    font-size: 15px;
+    line-height: 133%;
+    /* margin-left: 22px; */
+    cursor: pointer;
+    margin-top: 21px;
+    font-weight: 700;
+}
+.chramy_chasovni_block1 {
+    margin-top: 40px;
+    margin-left: 41.5px;
+}
+.etapy_raboty_heading {
+    color: var(--black, #000);
+    text-align: center;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px; /* 126.316% */
+    margin-top: 72px;
+}
+.etapy_raboty {
+    display: flex;
+    justify-content: center;
+}
+.etapy_raboty_container {
+    min-width: 1146px;
+    max-width: 1146px
+}
+.etapy_raboty_block2 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+.etapy_raboty_foto1,
+.etapy_raboty_foto2,
+.etapy_raboty_foto3,
+.etapy_raboty_foto4 {
+    width: 265px;
+    height: 187px;
+}
+.etapy_raboty_block2_card1,
+.etapy_raboty_block2_card2,
+.etapy_raboty_block2_card3,
+.etapy_raboty_block2_card4 {
+    width: 265px;
+}
+.etapy_raboty_block2_card1_text,
+.etapy_raboty_block2_card2_text,
+.etapy_raboty_block2_card3_text,
+.etapy_raboty_block2_card4_text {
+    color: var(--black, #000);
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%; /* 22.1px */
+    margin-top: 16px;
+}
+.csifra_etapy_raboty {
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 500px;
+    background: #335E50;
+    display: flex;
+    color: var(--White, #FFF);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%; /* 26px */
+    position: absolute;
+    top: 0;
+    margin-top: 16px;
+    margin-left: 16px;
+}
+.zayavka_na_dom_container {
+    margin-top: 94px;
+    border: 3px solid #EFE0D1;
+    display: flex;
+    justify-content: space-between;
+    min-width: 1146px;
+    max-width: 1146px;
+    margin-bottom: 70px;
+}
+.zayavka_na_dom {
+    display: flex;
+    justify-content: center;
+}
+.zayavka_na_dom_heading {
+    color: var(--black, #000);
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px; /* 126.316% */
+    max-width: 596px;
+}
+.button_zayavka_na_dom {
+    background-color: var(--Green);
+    color: #ffffff;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 102px;
+    font-size: 15px;
+    line-height: 133%;
+    cursor: pointer;
+    margin-top: 21px;
+    font-weight: 700;
+    margin-top: 41px;
+}
+.zayavka_na_dom_block1 {
+    padding: 87px 0 87px 40px;
+}
+.zayavka_na_dom_foto {
+    margin-bottom: 16px;
+    width: 487px;
+    height: 335px;
+}
+.years_on_market {
+    font-size: 15px;
+    line-height: 133%;
+}
+@media (max-width: 1420px) {
+    .proecty_homepage {
+        justify-content: flex-start;
+    }
+    .proecty_homepage_baths_container {
+        width: 64%;
+        margin-left: 20px;
+    }
+    .proecty_homepage_houses {
+        width: 100%;
+    }
+}
+@media (max-width: 1275px) {
+    .block_dostijeniy_container {
+        /* min-width: 85vw;
+        max-width: 85vw; */
+        width: 100%;
+        min-width: auto;
+        max-width: none;
+    }
+    .block_dostijeniy {
+        /* justify-content: flex-start; */
+        justify-content: space-between;
+    }
+    /* .dostijenie_csifra  {
+        font-size: 50px;
+    } */
+}
+@media (max-width: 1100px) {
+    .dostijenie_csifra {
+        font-size: 49px;
+    }
+    .dostijenie_csifra_one {
+        padding-left: 5.4px;
+        padding-right: 5px;
+    }
+    .dostijenie_csifra_two {
+        padding-left: 8.1px;
+        padding-right: 10px;
+    }
+    .dostijenie_csifra_three {
+        padding-left: 5.1px;
+        padding-right: 6px;
+    }
+    .laurel_branch_left,
+    .laurel_branch_right {
+        height: 52px;
+        width: auto;
+    }
+    .years_on_market {
+        font-size: 14px;
+    }
+    .block_dostijeniy {
+        margin-top: 43px;
+    }
+}
+@media (max-width: 810px) {
+    .block_dostijeniy {
+        margin-top: 30px;
+    }
+}
+@media (max-width: 600px) {
+    .dostijenie_csifra {
+        font-size: 40px;
+    }
+    .dostijenie_csifra_one {
+        padding-left: 7px;
+        padding-right: 6px;
+    }
+    .dostijenie_csifra_two {
+        padding-left: 4px;
+        padding-right: 6px;
+    }
+    .dostijenie_csifra_three {
+        padding-left: 6px;
+        padding-right: 5px;
+    }
+    .laurel_branch_left,
+    .laurel_branch_right {
+        height: 40px;
+        width: auto;
+    }
+    .years_on_market {
+        font-size: 13px;
+    }
+}
+@media (max-width: 500px) {
+    .block_dostijeniy_container {
+        flex-wrap: wrap;
+        column-gap: 25px;
+        row-gap: 26px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+@media (max-width: 360px) {
+    .block_dostijeniy_container {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+/* homepage конец */
+
+/* gallery начало */
+.gallery_heading {
+    color: var(--black, #000);
+    text-align: center;
+    font-size: 52px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 64px; /* 123.077% */
+    margin-top: 70px;
+}
+.gallery {
+    display: flex;
+    justify-content: center;
+}
+.gallery_container {
+    min-width: 1146px;
+    max-width: 1146px;
+    display: flex;
+    flex-direction: column;
+}
+.gallery_under_heading_text {
+    color: var(--black, #000);
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 28px */
+    max-width: 931px;
+    align-self: center;
+    opacity: 0.7;
+    margin-top: 24px;
+}
+.gallery_under_heading_text_700 {
+    font-weight: 700;
+    opacity: 0.9;
+}
+.gallery_section_houses_baths_gazebos_heading,
+.gallery_section_commercial_buildings_heading,
+.gallery_section_temples_chapels_heading {
+    color: var(--black, #000);
+    text-align: center;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px; /* 126.316% */
+}
+.gallery_block1_img_container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 30px;
+    margin-bottom: 101px;
+}
+.gallery_block1_img_container_1 {
+    display: flex;
+    gap: 30px;
+}
+.gallery_block1_img_container_2,
+.gallery_block1_img_container_3 {
+    display: flex;
+    gap: 30px;
+}
+.gallery_block1_img_container img,
+.gallery_block2_img_container img,
+.gallery_block3_img_container img {
+    transition: all 0.3s ease-in-out;
+}
+.gallery_block1_img_container img:hover,
+.gallery_block2_img_container img:hover,
+.gallery_block3_img_container img:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    opacity: .75;
+}
+.block1_img_1_1,
+.img_block1_line1_photo1 {
+    max-width: 656px;
+    max-height: 411px;
+}
+.block1_img_1_2,
+.img_block1_line1_photo2 {
+    max-width: 460px;
+    max-height: 411px;
+}
+
+
+.block1_img_2_1,
+.img_block1_line2_photo1 {
+    max-width: 362px;
+    max-height: 254px;
+}
+.block1_img_2_2,
+.img_block1_line2_photo2 {
+    max-width: 362px;
+    max-height: 254px;
+}
+.block1_img_2_3,
+.img_block1_line2_photo3 {
+    max-width: 362px;
+    max-height: 254px;
+}
+.block1_img_3_1,
+.img_block1_line3_photo1 {
+    max-width: 558px;
+    max-height: 371px;
+}
+.block1_img_3_2,
+.img_block1_line3_photo2 {
+    max-width: 558px;
+    max-height: 371px;
+}
+.block2_img_1,
+.img_block2_photo1 {
+    max-width: 508px;
+    max-height: 371px;
+}
+.block2_img_2,
+.img_block2_photo2 {
+    max-width: 609px;
+    max-height: 371px;
+}
+.block3_img_1,
+.img_block3_photo1 {
+    max-width: 362px;
+    max-height: 254px;
+}
+.block3_img_2,
+.img_block3_photo2 {
+    max-width: 362px;
+    max-height: 254px;
+}
+.block3_img_3,
+.img_block3_photo3 {
+    max-width: 362px;
+    max-height: 254px;
+}
+.img_block1_line1_photo1,
+.img_block1_line1_photo2,
+.img_block1_line2_photo1,
+.img_block1_line2_photo2,
+.img_block1_line2_photo3,
+.img_block1_line3_photo1, 
+.img_block1_line3_photo2,
+.img_block2_photo1,
+.img_block2_photo2,
+.img_block3_photo1,
+.img_block3_photo2,
+.img_block3_photo3 {
+    overflow: hidden;
+    /* flex: 1; */
+}
+.gallery_block2_img_container_1,
+.gallery_block3_img_container_1 {
+    display: flex;
+    gap: 30px;
+}
+.gallery_section_houses_baths_gazebos {
+    margin-top: 67px;
+}
+.gallery_section_temples_chapels {
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.gallery_section_commercial_buildings {
+    margin-top: 67px;
+    margin-bottom: 30px;
+}
+.gallery_block3_img_container {
+    /* margin-bottom: 101px; */
+}
+.block_relative {
+    position: relative;
+}
+/* gallery конец */
+
+/* o_kompanii начало */
+.iframe_o_kompanii_container {
+    width: 100%; /* Ширина 100% для адаптивности */
+    max-width: 1146px; /* Максимальная ширина по вашему выбору */
+    height: 0; /* Начнем с нулевой высоты и будет регулировать ее с помощью padding-bottom */
+    /* padding-bottom: 31.25%; Соотношение сторон видео 16:9 (примерно) */
+    padding-bottom: 52.4%;
+    position: relative;
+} 
+.iframe_o_kompanii_container .iframe_o_kompanii {
+    width: 100%;
+    height: 100%; /* Заполняет контейнер iframe по ширине и высоте */
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.o_companii {
+    display: flex;
+    justify-content: center;
+}
+.o_companii_container {
+    min-width: 1146px;
+    max-width: 1146px;
+    display: flex;
+    flex-direction: column;
+}
+.o_companii_container_text {
+    color: var(--black, #000);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 140% */
+    width: 885px;
+    opacity: 0.7;
+}
+.o_companii_container_text_container {
+    margin-top: 40px;
+}
+.o_companii_karta_container {
+    margin-top: 50px;
+    margin-bottom: 54px;
+    display: flex;
+    border: 3px solid #EFE0D1;
+}
+.o_companii_karta_block1 {
+    flex: 1;
+}
+.o_companii_karta_block2 {
+    flex: 1.3;
+}
+.o_companii_karta_block1_heading {
+    color: var(--black, #000);
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 31.2px */
+}
+.o_companii_karta_adress_proizvodstva_text1,
+.o_companii_karta_tel_text1 {
+    color: var(--black, #000);
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px; /* 133.333% */
+}
+.o_companii_karta_adress_proizvodstva_text2 {
+    color: var(--black, #000);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 140% */
+    opacity: 0.65;
+}
+.o_companii_karta_email_text1 {
+    color: var(--black, #000);
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px; /* 133.333% */
+}
+.o_companii_karta_tel_list_point {
+    list-style-type: none;
+}
+.o_companii_karta_tel_list_point_link {
+    text-decoration: none;
+    color: var(--black, #000);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 140% */
+}
+.o_companii_karta_email_link {
+    text-decoration: none;
+    color: var(--Green, #618B7E);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 140% */
+}
+.o_companii_karta_social_seti_list {
+    display: flex;
+    width: 128px;
+    justify-content: space-between;
+}
+.o_companii_karta_social_seti_point {
+    list-style-type: none;
+}
+.o_companii_karta_adress_proizvodstva_container {
+    display: flex;
+    gap: 20px;
+}
+.o_companii_karta_adress_proizvodstva_container {
+    margin-top: 20px;
+}
+/* .o_companii_karta_adress_proizvodstva_text2 { */
+    /* margin-top: 4px; */
+/* } */
+.o_companii_karta_tel {
+    margin-top: 30px;
+}
+.o_companii_karta_tel_list {
+    margin-top: 4px;
+}
+.o_companii_karta_email {
+    margin-top: 30px;
+}
+.o_companii_karta_social_seti {
+    margin-top: 39px;
+}
+.o_companii_karta_block1 {
+    padding: 41px 40px 36px 40px;
+}
+.o_companii_karta_container_iframe {
+    flex: 1.3;
+}
+.o_companii_karta_block1_gerb {
+    width: 74px;
+    height: 90px;
+}
+.o_companii_karta_adress_proizvodstva {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.o_companii_karta_adress_proizvodstva {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+/* o_kompanii конец */
+
+/* proizvodstvo начало */
+
+.proizvodstvo_heading {
+    color: var(--black, #000);
+    text-align: center;
+    font-size: 52px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 64px; /* 123.077% */
+    margin-top: 70px;
+}
+.proizvodstvo_under_heading_text {
+    color: var(--black, #000);
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 140% */
+    opacity: 0.7;
+    margin-top: 16px;
+    width: 986px;
+}
+.proizvodstvo {
+    display: flex;
+    justify-content: center;
+}
+.proizvodstvo_container {
+    min-width: 1146px;
+    max-width: 1146px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.proizvodstvo_vidy_foto {
+    width: 264px;
+    height: 264px;
+}
+.proizvodstvo_vidy_container_2 {
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 1146px;
+    max-width: 1146px;
+    justify-content: space-between;
+    margin-top: 55px;
+    row-gap: 40px;
+}
+.proizvodstvo_vidy_block_text {
+    width: 264px;
+    color: var(--black, #000);
+    text-align: center;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px; /* 133.333% */
+}
+.proizvodstvo_vidy {
+    display: flex;
+    justify-content: center;
+}
+.proizvodstvo_vidy_block {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+/* proizvodstvo конец */
+/* catalog начало */
+
+.catalog_heading {
+    color: #000;
+    text-align: center;
+    font-size: 52px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 64px; /* 123.077% */
+    padding-top: 70px;
+}
+.catalog {
+    display: flex;
+    justify-content: center;
+}
+.catalog_container {
+    min-width: 1146px;
+    max-width: 1146px;
+}
+.buttons_bath_houses_maf {
+    display: flex;
+    justify-content: center;
+    margin-top: 21px;
+}
+.buttons_houses,
+.buttons_bath,
+.buttons_maf {
+    padding: 11px 22px;
+    color: #335D50;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 133.333% */
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    background: #FFF;
+    width: 53px;
+    text-align: center;
+    cursor: pointer;
+}
+.buttons_houses {
+    border: 3px solid #C0D1CB;
+    border-right: none;
+}
+.buttons_bath {
+    border: 3px solid #C0D1CB;
+    border-right: none;
+    border-left: none;
+}
+.buttons_maf {
+    border: 3px solid #C0D1CB;
+    border-left: none;
+}
+.buttons_bath_houses_maf_active {
+    background-color: #C0D1CB;
+    color: #000;
+}
+.houses_block_foto_1 {
+    width: 753px;
+    height: 424px;
+}
+.houses_block_foto_2 {
+    width: 106px;
+    height: 57px;
+    /* padding: ; */
+}
+.houses_block_foto_3 {
+    width: 106px;
+    height: 58px;
+}
+.houses_block_list_point {
+    display: flex;
+    border: 3px solid #C0D1CB;
+}
+.houses_block_list_point1 {
+    margin-top: 40px;
+}
+.houses_block_list_point2 {
+    margin-top: 20px;
+}
+.houses_block_foto_section {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 753px;
+    /* height: 424px; */
+    /* flex: 1.5; */
+}
+.houses_block_foto_section1 {
+    position: absolute;
+    left: -3px;
+    top: -3px;
+}
+.houses_block_heading {
+    color: var(--black, #000);
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 31.2px */
+    /* margin-top: 27px; */
+}
+.houses_block_parameters {
+    color: var(--black, #000);
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 19.5px */
+    opacity: 0.7;
+    display: flex;
+    margin-top: 22px;
+}
+.houses_block_text1 {
+    color: var(--black, #000);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 140% */
+    margin-top: 147px;
+}
+.bath_block_text1 {
+    color: var(--black, #000);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 140% */
+    margin-top: 178px;
+}
+.houses_block_text2 {
+    color: var(--black, #000);
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 16.9px */
+    opacity: 0.5;
+    margin-top: 7px;
+    max-width: 329px;
+}
+.houses_block_button {
+    background-color: var(--Green);
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 102px;
+    font-size: 15px;
+    line-height: 133%;
+    cursor: pointer;
+    margin-top: 22px;
+    font-weight: 700;
+    margin-bottom: 32px;
+}
+.button_calculate_sidebar:hover {
+    opacity: .6;
+    transition: all 0.2s ease;
+}
+.houses_block_parameters1,
+.houses_block_parameters2 {
+    width: 143px;
+    display: flex;
+    flex-direction: column;
+    gap: 11.3px;
+}
+.houses_block_parameters_section {
+    margin-top: 27px;
+    margin-left: 30px;
+}
+.houses_block_foto_section2 {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 8px;
+}
+.houses_block_foto_section2 {
+    gap: 8px;
+}
+.active_houses_block_foto {
+    border: 3px solid #EC6519;
+}
+.non_active_houses_block_foto {
+    border: 3px solid #FFFFFF;
+}
+.zayavka_na_dom_container2 {
+    margin-top: 40px;
+    border: 3px solid #EFE0D1;
+    display: flex;
+    justify-content: space-between;
+    min-width: 1146px;
+    max-width: 1146px;
+    margin-bottom: 19px;
+}
+.before_after_block1_text_container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+    /* catalog конец */
+
+/* слайдер №1 на странице homepage начало */
+.homepage_slider_one {
+    display: flex;
+    justify-content: center;
+    /* margin-top: 60px; */
+}
+.homepage_slider_one_component {
+    min-width: 1366px;
+    max-width: 1366px;
+    position: relative;
+}
+.homepage_body {
+    overflow-x: hidden;
+}
+.slider_1_container .slick-prev {
+    position: absolute;
+    z-index: 1;
+    /* opacity: .5; */
+    background-color: unset;
+    border: none;
+    bottom: 27px;
+    left: 93px;
+    cursor: pointer;
+}
+.slider_1_container .slick-next {
+    position: absolute;
+    z-index: 1;
+    /* opacity: .5; */
+    background-color: unset;
+    border: none;
+    bottom: 27px;
+    /* left: 80%; */
+    right: 93px;
+    cursor: pointer;
+}
+.slider_1_container {
+    height: 674px;
+}
+.slider_1_foto_1,  
+.slider_1_foto_2,  
+.slider_1_foto_3,  
+.slider_1_foto_4,  
+.slider_1_foto_5,  
+.slider_1_foto_6,  
+.slider_1_foto_7  {
+    height: 674px;
+    width: 100%;
+}
+.slider_1_container .slick-slide {
+    border: 17px solid #FFFFFF;
+}
+.slider_1_container .slick-dots {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    position: absolute;
+    z-index: 1;
+    bottom: 27px;
+    cursor: pointer;
+    width: 100%;
+}
+.slider_1_container .slick-dots li {
+    list-style-type: none;
+}
+.slider_1_container .slick-dots li button {
+    border: none;
+}
+.slider_1_container .slick-dots li button {
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    /* width: 10px; */
+    /* width: 13px; */
+    width: 12px;
+    /* height: 10px; */
+    /* height: 13px; */
+    height: 12px;
+    border-radius: 50%;
+    /* background-color: #bbb; */
+    /* background-color: #D9D9D9; */
+    background-color: #FFFFFF;
+    /* fill: #FFF; */
+    opacity: 0.4;
+    border: none;
+    cursor: pointer;
+}
+.slider_1_container .slick-dots li.slick-active button {
+    /* background-color: #000; */
+    background-color: #FFFFFF;
+    opacity: 1;
+}
+.slider_1_heading {
+    position: absolute;
+    z-index: 1;
+    /* bottom: 27px; */
+    bottom: 131px;
+    color: #FFFFFF;
+    font-size: 52px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%; /* 57.2px */
+    width: 796px;
+    left: 93px;
+}
+.slider_1_container .slick-active {
+
+}
+@media (max-width: 1620px) {
+    .homepage_slider_one {
+        justify-content: flex-start;
+    }
+    .homepage_slider_one_component,
+    .slider_1_container,
+    .slider_1_foto_1,  
+    .slider_1_foto_2,  
+    .slider_1_foto_3,  
+    .slider_1_foto_4,  
+    .slider_1_foto_5,  
+    .slider_1_foto_6,  
+    .slider_1_foto_7  {
+        /* min-width: 1366px;
+        max-width: 1366px; */
+        /* width: 100%; */
+        height: calc(42vw - 20px);
+        width: 100%;
+        min-width: auto;
+    }
+    /* .homepage_slider_one_component,
+    .slider_1_container,
+    .slider_1_foto_1,  
+    .slider_1_foto_2,  
+    .slider_1_foto_3,  
+    .slider_1_foto_4,  
+    .slider_1_foto_5,  
+    .slider_1_foto_6,  
+    .slider_1_foto_7  {
+        
+    } */
+}
+@media (max-width: 1600px) {
+    /* .homepage_slider_one_component {
+        min-width: 1366px;
+        max-width: 1366px;
+    } */
+    /* .slider_1_foto_1 {
+        width: 100vw;
+    } */
+}
+@media (max-width: 1400px) {
+    .slider_1_heading {
+        font-size: 3.715vw;
+        width: 60vw;
+    }
+}
+@media (max-width: 1200px) {
+    .slider_1_container .slick-prev svg {
+        width: 40px;
+        height: 40px;
+    }
+    .slider_1_container .slick-next svg {
+        width: 40px;
+        height: 40px;
+    }
+    .slider_1_heading {
+        bottom: 8vw;
+    }
+    .slider_1_container .slick-prev,
+    .slider_1_container .slick-next,
+    .slider_1_container .slick-dots {
+        bottom: 2.25vw;
+    }
+    .slider_1_container .slick-slide {
+        border: 12px solid #FFFFFF;
+    }
+}
+@media (max-width: 985px) {
+    .slider_1_container .slick-prev svg {
+        width: 30px;
+        height: 30px;
+    }
+    .slider_1_container .slick-next svg {
+        width: 30px;
+        height: 30px;
+    }
+}
+@media (max-width: 900px) {
+    .slider_1_heading {
+        width: 49vw;
+    }
+}
+@media (max-width: 810px) {
+    .sidebar_navigation {
+        display: none;
+    }
+    .main_section {
+        margin-left: 0;
+    }
+}
+/* слайдер №1 на странице homepage конец */
+/* header adaptive начало */
+.header_adaptive {
+    display: none;
+}
+.header_adaptive_component {
+    display: flex;
+    width: 100%;
+    /* flex-direction: column; */
+}
+.header_adaptive_component_container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu_hamburger {
+    display: none;
+    position: absolute;
+    /* right: 10px; */
+    /* right: 0px; */
+    left: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    /* height: 14px; */
+    height: 4px;
+}
+.menu_hamburger span {
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: #618B70;
+    margin-bottom: 4px;
+    transition: 0.5s all;
+}
+.header_adaptive_component_logo_link {
+    display: flex;
+}
+.slider_1_container .slick-prev,
+.slider_1_container .slick-next {
+    position: absolute;
+    z-index: 2;
+}
+@media (max-width: 810px) {
+    .header_adaptive {
+        display: flex;
+        justify-content: center;
+        /* margin-top: 10px;
+        margin-bottom: 10px; */
+        position: sticky;
+        top: 0;
+        width: 100%;
+        z-index: 13;
+        background-color: #ffffff;
+        height: 60px;
+    }
+    .slider_1_container .slick-slide {
+        border: none;
+    }
+    .menu_hamburger {
+        display: block;
+        cursor: pointer;
+        z-index: 12;
+        height: 14px;
+    }
+}
+@media (max-width: 690px) {
+    .slider_1_heading {
+        bottom: 9.3vw;
+    }
+}
+@media (max-width: 618px) {
+    .slider_1_foto_1,
+    .slider_1_foto_2,
+    .slider_1_foto_3,
+    .slider_1_foto_4,
+    .slider_1_foto_5,
+    .slider_1_foto_6
+    .slider_1_foto_7 {
+        height: 321px;
+        width: auto;
+    }
+    .homepage_slider_one_component .slick-list {
+        margin-left: -65px;
+    }
+    .homepage_slider_one_component,
+    .slider_1_container, 
+    .slider_1_foto_1, 
+    .slider_1_foto_2, 
+    .slider_1_foto_3, 
+    .slider_1_foto_4, 
+    .slider_1_foto_5, 
+    .slider_1_foto_6, 
+    .slider_1_foto_7 {
+        height: 321px;
+    }
+    .slider_1_container .slick-prev, .slider_1_container .slick-next, .slider_1_container .slick-dots {
+        bottom: 4.25vw;
+    }
+    .slider_1_heading {
+        bottom: 13.3vw;
+    }
+}
+
+@media (max-width: 600px) {
+    .slider_1_heading {
+        font-size: 22px;
+        width: 279px;
+    }
+}
+@media (max-width: 500px) {
+    .menu_hamburger {
+        left: 20px;
+    }
+    .slider_1_heading {
+        text-align: center;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .slider_1_container .slick-prev {
+        left: 20px;
+        bottom: 20px;
+    }
+    .slider_1_container .slick-next {
+        right: 20px;
+        bottom: 20px;
+    }
+    .slider_1_container .slick-dots {
+        bottom: 32px;
+    }
+    .slider_1_container .slick-dots li button {
+        width: 8px;
+        height: 8px;
+    }
+    .slider_1_container .slick-dots {
+        gap: 12px;
+    }
+    .slider_1_heading {
+        bottom: 74px;
+    }
+}
+@media (max-width: 470px) {
+    .homepage_slider_one_component .slick-list {
+        margin-left: -120px;
+    }
+}
+@media (max-width: 390px) {
+    .homepage_slider_one_component .slick-list {
+        margin-left: -168px;
+    }
+}
+/* header adaptive конец */
+/* меню hamburger начало */
+.menu {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    top: 0;
+    /* left: 0; */
+    right: 0;
+    width: 100%;
+    /* width: 97%; */
+    height: 100vh;
+    padding: 11px 0;
+    /* padding: 20px 15px; */
+    /* background-color: rgba(0,0,0,0.8); */
+    /* background-color: #49B7B7; */
+    /* background-color: #34A4BD; */
+    background-color: #F4F4F4;
+    opacity: 0.96;
+    transition: 0.6s all;
+    z-index: 11;
+}
+.hamburger_active span {
+    margin-bottom: -2px;
+}
+.hamburger_active span:nth-child(1) {
+    transform: translateY(3px) rotate(-45deg);
+}
+.hamburger_active span:nth-child(2) {
+    display: none;
+}
+.hamburger_active span:nth-child(3) {
+    transform: translateY(3px) rotate(45deg);
+}
+.menu_active {
+    /* left: -107%; */
+    right: -107%;
+}
+.logo_header_adaptive {
+    /* z-index: 12; */
+    position: relative;
+}
+.header_logo_and_links_list_link {
+    color: var(--335-e-50);
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 1.98px;
+    text-transform: uppercase;
+}
+.header_connection_callback {
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+    color: #335D50;
+    text-align: center;
+    margin-top: 7px;
+    max-width: 178px;
+    cursor: pointer;
+}
+.button_calculate_header {
+    background-color: var(--Green);
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 102px;
+    font-size: 13px;
+    line-height: 153%;
+    cursor: pointer;
+    margin-top: 30px;
+    font-weight: 700;
+}
+@media (max-width: 450px) {
+    .menu_hamburger {
+        left: 20px;
+    }
+    .menu {
+        /* width: 93%; */
+        width: 100%;
+    }
+}
+/* меню hamburger конец */
